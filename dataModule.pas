@@ -1,16 +1,16 @@
-unit dataModule;
+unit datamodule;
 
 interface
 
 uses
-  SysUtils, Classes, DB, ZAbstractConnection, ZConnection,
-  ZAbstractRODataset, ZAbstractDataset, ZDataset;
+  SysUtils, Classes, DB, ZAbstractRODataset, ZAbstractDataset, ZDataset,
+  ZAbstractConnection, ZConnection;
 
 type
   TDataModule1 = class(TDataModule)
-    ZConnection1: TZConnection;
-    Dsatuan: TDataSource;
-    Zsatuan: TZQuery;
+    Zpenjualan: TZConnection;
+    dsdkustomer: TDataSource;
+    Zkustomer: TZQuery;
   private
     { Private declarations }
   public
@@ -21,9 +21,6 @@ var
   DataModule1: TDataModule1;
 
 implementation
-
-uses
-  satuan;
 
 {$R *.dfm}
 

@@ -1,10 +1,10 @@
 object DataModule1: TDataModule1
   OldCreateOrder = False
-  Left = 260
-  Top = 175
-  Height = 290
-  Width = 333
-  object ZConnection1: TZConnection
+  Left = 366
+  Top = 180
+  Height = 321
+  Width = 465
+  object Zpenjualan: TZConnection
     ControlsCodePage = cGET_ACP
     Properties.Strings = (
       'AutoEncodeStrings=ON')
@@ -18,16 +18,16 @@ object DataModule1: TDataModule1
     Left = 120
     Top = 56
   end
-  object Dsatuan: TDataSource
-    DataSet = Zsatuan
+  object dsdkustomer: TDataSource
+    DataSet = Zkustomer
     Left = 88
     Top = 128
   end
-  object Zsatuan: TZQuery
-    Connection = ZConnection1
+  object Zkustomer: TZQuery
+    Connection = Zpenjualan
     Active = True
     SQL.Strings = (
-      'select * from satuan')
+      'select * from kustomer')
     Params = <>
     Left = 192
     Top = 128

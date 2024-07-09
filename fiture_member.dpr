@@ -1,9 +1,9 @@
-program fiture_satuan;
+program fiture_member;
 
 uses
   Forms,
-  satuan in 'satuan.pas' {Form1},
-  dataModule in 'satuan\dataModule.pas' {DataModule1: TDataModule};
+  kustomer in 'kustomer.pas' {Form1},
+  datamodule in 'datamodule.pas' {DataModule1: TDataModule};
 
 {$R *.res}
 
