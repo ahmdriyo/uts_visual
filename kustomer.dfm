@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 396
-  Top = 105
-  Width = 760
+  Left = 387
+  Top = 155
+  Width = 891
   Height = 660
   Cursor = crHandPoint
   Caption = 'Form1'
@@ -169,7 +169,7 @@ object Form1: TForm1
   object tablename: TDBGrid
     Left = 48
     Top = 328
-    Width = 561
+    Width = 681
     Height = 153
     DataSource = DataModule1.dsdkustomer
     TabOrder = 4
@@ -242,5 +242,14 @@ object Form1: TForm1
     Height = 21
     TabOrder = 12
     OnChange = edtcariChange
+  end
+  object btn1: TButton
+    Left = 616
+    Top = 264
+    Width = 97
+    Height = 49
+    Caption = 'REPORT'
+    TabOrder = 13
+    OnClick = btn1Click
   end
 end

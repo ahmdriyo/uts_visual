@@ -30,6 +30,7 @@ type
     edtAlamat: TEdit;
     lbl7: TLabel;
     edtcari: TEdit;
+    btn1: TButton;
     procedure btnhapusClick(Sender: TObject);
     procedure btnBbaruClick(Sender: TObject);
     procedure cbbMemberChange(Sender: TObject);
@@ -39,6 +40,7 @@ type
     procedure btnClearInputsClick(Sender: TObject);
     procedure btneditClick(Sender: TObject);
     procedure edtcariChange(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -52,7 +54,7 @@ var
 implementation
 
 uses
-  datamodule;
+  datamodule, report;
 
 {$R *.dfm}
 
@@ -197,6 +199,11 @@ begin
     Params.ParamByName('nama').Value := '%' +edtcari.Text + '%';
     Open;
   end;
+end;
+
+procedure TForm1.btn1Click(Sender: TObject);
+begin
+  Form2.QuickRep1.Preview;
 end;
 
 end.
